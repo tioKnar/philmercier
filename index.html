@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|La+Belle+Aurore" rel="stylesheet"> 
+    <link id="pagestyle" class="test-then" rel="stylesheet" type="text/css" href="css/css/style_then.css">
+
+
+
+    <title>Philippe Mercier - Développeur Web</title>
+  </head>
+
+  <body>
+
+	<!-- THEN  -->
+	<div id="then">
+
+		
+	<!-- MAIL MODAL -->
+
+		<div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+	      		<!-- Close Button -->
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+			  </div>
+
+		        <!-- Form -->
+		  		<form role="form" method="post" id="reused_form">
+			        <button type="submit" id="send" aria-label="Send">
+			        </button>
+			      <div class="modal-body">
+				      <input type="email" name="email" id="email" placeholder="Votre e-mail">
+				      <input type="text" name="name" id="name" placeholder="Votre nom">
+				      <textarea id="textarea" name="message" placeholder="Votre message"></textarea>
+				  </div>
+		        </form>
+		    </div>
+		  </div>
+		</div>
+
+
+
+		<!-- HIRE ME! GIF -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-6 offset-3">
+						<a href="#" data-toggle="modal" data-target="#mailModal">
+							<img class="hire-gif" src="img/then/gifs/hire-gif.gif" alt="hire">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<!-- MENU + MAIN CONTENT -->
+		<main class="container-fluid main-content">
+			<div class="row">
+				<nav class="col-md-2 col-12">
+					<div class="menu_then">
+						<!-- MENU -->
+						<ul>
+							<li pageName="landing"><a href="#">Accueil</a></li>
+							<li pageName="portfolio"><a href="#">Portfolio</a></li>
+							<li pageName="skills"><a href="#">Compétences</a></li>
+							<li pageName="contact" data-toggle="modal" data-target="#mailModal"><a href="#">Contact</a></li>
+						</ul>
+						<!-- CV -->
+						<a id="resume-gif" href="../files/cv_philippe_mercier.pdf">
+							<img src="img/then/gifs/resume-gif.gif" alt="cv">
+						</a>
+						<!-- SWAP STYLE < 800 PX -->
+						<div class="swap-click-800">
+							<div class="click-here">
+								<img class="click-gif" src="img/then/gifs/click-gif.gif" alt="click">
+								<img class="down-gif" src="img/then/gifs/down-gif.gif" alt="down">
+							</div>
+						    <div class="swap-style">
+						      <button class="then_button">Avant</button>
+						      <button class="now_button">Après</button>
+						    </div>
+						</div>		
+					</div>	
+				</nav>
+
+				<div class="then_ajax col-md-5 offset-md-1 col-12">
+					<div class="tab">
+						<h2>Bienvenue sur mon site !</h2>
+					</div>
+
+					<div class="content">
+						<p>Un hommage aux vieux sites qui ne se font (en principe) plus, par un jeune développeur web talentueux. <br>
+						<span class="order">Cliquez sur "Après"</span> pour une éxpérience plus moderne, et apprécier l'étendue dudit talent...</p>
+						<p>Mes projets sont publiés sur <a href="https://github.com/tioKnar/">GitHub</a></p>
+						<p>Retrouvez-moi aussi sur <a href=https://linkedin.com/in/philippe-mercier-dev">LinkedIn</a></p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	</div>  
+
+	<!-- NOW -->
+	<div id="now">
+
+		<!-- CV MODAL -->
+
+			<div class="modal fade" id="cvModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <img width="100%" src="files/cv_philippe_mercier.png" alt="cv">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		<!-- NAVBAR -->
+			<nav class="justify-content-end fixed-top navbar navbar-light navbar-expand-sm">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			    <div class="navbar-nav">
+			      <a linkName="landing" class="nav-item nav-link menu-link" href="#">Accueil</a>	
+			      <a linkName="portfolio" class="nav-item nav-link menu-link" href="#">Portfolio</a>
+			      <a linkName="skills" class="nav-item nav-link menu-link" href="#">Compétences</a>
+			      <a linkName="contact" class="nav-item nav-link menu-link" href="#">M'écrire</a>
+			      <a class="nav-item nav-link cv-btn" href="#">CV</a>
+			    </div>
+			  </div>
+			</nav>
+
+	<!-- NOW PAGES (jQUERY) -->
+		<!-- MAIN-NOW RESIZES WHEN RESUME SUMMONED -->
+			<div class="container-fluid main-now">
+				<!-- NOW LANDING PAGE -->
+				<div pageName="landing" class="row text-center active landing-bg">
+					<div class="col">
+						<h2>Un développeur web heureux.</h2>
+						 <a class="btn linkedin landing-link" href="https://www.linkedin.com/in/philippe-mercier-dev" target="_blank" role="button">LinkedIn</a>
+					    <a class="btn github landing-link" href="https://github.com/tioKnar/" target="_blank" role="button">GitHub</a>
+					</div>
+				</div>
+
+				<!-- NOW PORTFOLIO -->
+				<div pageName="portfolio" class="container-fluid inactive portfolio-bg">
+					<div class="row text-center">
+
+						<div class="site-thumbnail col-lg-4 col-md-6 col-12">
+							<a href="https://vimeo.com/277301273" target="_blank" class="box"> 
+								<div class="tealjobs-box"></div>
+						        <div class="content text-center">
+									<h2>
+										TealJobs
+									</h2>
+									<p class="description text-center">
+										Projet de fin d'études : Test de personnalité aidant à la reconversion professionnelle.<br>
+							    		[Bootstrap, Sass, Laravel, PHP7, Javascript, GitHub]
+									</p>
+						    	</div>
+							</a>
+						</div>		
+
+					<!--  <div class="site-thumbnail col-lg-4 col-md-6 col-12">
+							<a href="http://www.mrcaroline.com" target="_blank" class="box"> 
+								<div class="caroline-box"></div>
+						        <div class="content text-center">
+									<h2>
+										MrCaroline
+									</h2>
+									<p class="description text-center">
+										Site personnel pour une chanteuse de musiques du monde.<br>
+					      				[Wordpress]
+									</p>
+						    	</div>
+							</a>
+						</div>	 -->	
+
+						<div class="site-thumbnail col-lg-4 col-md-6 col-12">
+							<a href="http://www.massagerelaxation-bordeaux.com" target="_blank" class="box"> 
+								<div class="massages-box"></div>
+						        <div class="content text-center">
+									<h2>
+										Massages Relaxants
+									</h2>
+									<p class="description text-center">
+										Site professionnel pour un masseur bordelais.<br>
+					      				[Wordpress]
+									</p>
+						    	</div>
+							</a>
+						</div>	
+					</div>
+
+					<div class="row text-center">
+						<div class="site-thumbnail col-lg-4 col-md-6 col-12">
+							<a href="https://www.philmercier.fr" target="_blank" class="box"> 
+								<div class="dev-box"></div>
+						        <div class="content text-center">
+									<h2>
+										Philippe Mercier  Développement Web
+									</h2>
+									<p class="description text-center">
+										Ce site, à vrai dire. Un portfolio personnel.<br>
+					      				[Bootstrap, Less, jQuery]
+									</p> 
+						    	</div>
+							</a>
+						</div>			
+
+						<div class="site-thumbnail col-lg-4 col-md-6 col-12">
+							<a href="http://www.iridologie-chromatherapie.fr/" target="_blank" class="box"> 
+								<div class="irido-box"></div>
+						        <div class="content text-center">
+									<h2>
+										Iridologie Chromatherapie
+									</h2>
+									<p class="description text-center">
+										Site professionnel pour une naturopathe.<br>
+					      				[Wordpress]
+									</p> 
+						    	</div>
+							</a>
+						</div>		
+					</div>				
+				</div>
+
+				<!-- NOW SKILLS -->
+				<div pageName="skills" class="container-fluid text-center inactive skills-bg">
+
+						<div class="row text-right legend">
+							<p>[Frameworks]</p>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<h2>Langages</h2><hr>
+								<ul>
+									<li>HTML5  <span>[</span>Bootstrap<span>]</span> </li>
+									<li>CSS3  <span>[</span>Sass / Less<span>]</span> </li>
+									<li>Javascript  <span>[</span>jQuery<span>]</span> </li>
+									<li>PHP7  <span>[</span>Laravel<span>]</span> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<h2>Outils et CMS</h2><hr>
+								<ul>
+									<li>Sublime Text / PHP Storm</li>
+									<li>GitHub</li>
+									<li>Wordpress</li>
+									<li>Photoshop</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<h2>En cours de formation</h2><hr>
+								<ul>
+									<li>Node JS</li>
+									<li>React JS</li>
+
+								</ul>
+							</div>
+						</div>
+				</div>
+
+				<!-- NOW CONTACT  -->
+				<div pageName="contact" class="row text-center inactive contact-bg">
+					<div class="col-md-6 offset-md-3 col-sm-12 col-xs-12" id="form_container">
+	                    <form role="form" method="post" id="reused_form">
+	                        <div class="form-group">
+	                            <label><i class="fa fa-user" aria-hidden="true"></i> Nom</label>
+	                            <input type="text" name="name" class="form-control" placeholder="Votre nom">
+	                        </div>
+	                        <div class="form-group">
+	                            <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+	                            <input type="email" name="email" class="form-control" placeholder="Votre email">
+	                        </div>
+	                        <div class="form-group">
+	                            <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+	                            <textarea rows="3" name="message" class="form-control" placeholder="Votre message"></textarea>
+	                        </div>
+	                        <div class="form-group">
+	                            <button type="submit" class="btn btn-raised btn-block btn-danger">Envoyer &rarr;</button>
+	                        </div>
+	                    </form>
+	                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+	                        <h4>
+	                            Erreur...
+	                        </h4>
+	                        Une erreur est survenue lors de l'envoi. 
+	                    </div>
+	                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+	                        <h2>Merci pour votre message ! <br>
+	                        J'y réponds rapidement.</h2>
+	                    </div>
+	                </div>
+                </div>
+			</div>	
+	</div>
+
+	<!-- PDF RESUME -->
+	<div id="now" class="cv">
+
+			<div class="cv-desktop">
+				<object data="files/cv_philippe_mercier.pdf#view=FitW" type="application/pdf" width="100%" height="100%">
+					<iframe src="files/cv_philippe_mercier.pdf#view=FitW" style="border: none;" width="100%" height="100%">
+					Ce navigateur ne gère pas les PDF comme prévu: <a href="files/cv_philippe_mercier.pdf">Téléchargez-le ici.</a>
+					</iframe>
+				</object>
+				<button type="button" class="btn btn-warning close-btn">
+					<img src="img/cancel.svg" width="80%" height="80%" alt="close">
+				</button>
+			</div>
+			
+			<div class="cv-mobile">
+				<img src="files/cv_philippe_mercier.png" alt="cv" width="100%" height="100%">
+				<button type="button" class="btn btn-warning close-btn">
+					<img src="img/cancel.svg" width="80%" height="80%" alt="close">
+				</button>
+			</div>
+
+
+	</div>
+
+
+
+	<!-- SWAP CSS -->
+	<footer class="container-fluid fixed-bottom justify-content-end  footer-now">
+		<div class="row d-flex justify-content-end">
+			<div class="swap-click">
+				<div class="click-here">
+					<img class="click-gif" src="img/then/gifs/click-gif.gif" alt="click">
+					<img class="down-gif" src="img/then/gifs/down-gif.gif" alt="down">
+				</div>
+			    <div class="text-center swap-style">
+			      <button class="then_button">Avant</button>
+			      <button class="now_button">Après</button>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- JS -->
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.489/build/pdf.min.js"></script>
+    <script src="js/script_cv.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,446 @@
+body {
+  overflow: hidden;
+  background-color: #292c2f;
+  color: white;
+  font-family: 'Raleway', sans-serif !important;
+}
+#then {
+  display: none;
+}
+nav {
+  background-color: transparent !important;
+  padding-right: 3em !important;
+  opacity: 1;
+  transition: opacity 1.3s;
+}
+nav a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white !important;
+}
+nav .navbar-toggler {
+  border-color: #ffffff !important;
+}
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+@media screen and (max-width: 991.98px) {
+  nav .navbar-nav {
+    text-align: right;
+  }
+}
+.cv {
+  position: absolute;
+  display: none;
+  left: 200%;
+  top: 0;
+  width: 65vw;
+  height: 100%;
+  transition: left 1.3s;
+}
+.cv .cv-desktop {
+  display: none;
+  height: 100%;
+}
+.cv .cv-mobile {
+  display: none;
+  margin-top: 2em;
+}
+@media only screen and (max-width: 1079px) {
+  .cv .cv-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .cv .cv-desktop {
+    display: block;
+  }
+}
+.close-btn {
+  position: absolute;
+  opacity: 0;
+  z-index: 99;
+  top: 47%;
+  left: -27px;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  transition: opacity 1s;
+}
+.close-btn-baby-display {
+  position: absolute;
+  opacity: 1;
+  z-index: 99;
+  top: 6%;
+  left: -1.5vw;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+}
+.cv-cv-on {
+  position: absolute;
+  display: none;
+  left: 200%;
+  top: 0;
+  width: 65vw;
+  height: 100%;
+  transition: left 1.3s;
+  opacity: 1;
+  left: 35%;
+}
+.cv-cv-on .cv-desktop {
+  display: none;
+  height: 100%;
+}
+.cv-cv-on .cv-mobile {
+  display: none;
+  margin-top: 2em;
+}
+@media only screen and (max-width: 1079px) {
+  .cv-cv-on .cv-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .cv-cv-on .cv-desktop {
+    display: block;
+  }
+}
+.main-now {
+  position: absolute;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+  transition: width 1.3s;
+}
+.main-now-cv-on {
+  position: absolute;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+  transition: width 1.3s;
+  width: 35%;
+}
+.inactive {
+  display: none;
+}
+.active {
+  display: block;
+}
+.bg-style {
+  width: 100%;
+  margin: 0px;
+  background-position: center;
+  background-size: cover;
+}
+.landing-bg {
+  background-image: url('../../img/now/landing_bg.jpg');
+  width: 100%;
+  margin: 0px;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.portfolio-bg {
+  background-image: url('../../img/now/portfolio_bg.jpg');
+  width: 100%;
+  margin: 0px;
+  background-position: center;
+  background-size: cover;
+}
+.skills-bg {
+  background-image: url('../../img/now/skills_bg.jpg');
+  width: 100%;
+  margin: 0px;
+  background-position: center;
+  background-size: cover;
+}
+.contact-bg {
+  background-image: url('../../img/now/contact_bg.jpg');
+  width: 100%;
+  margin: 0px;
+  background-position: center;
+  background-size: cover;
+}
+.landing-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-bg h2 {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 2.5em;
+}
+.landing-bg .landing-link {
+  font-weight: bold;
+  margin: 0.5em;
+  padding: 1.5rem 6rem;
+  color: white;
+  transition: all 1.3s;
+}
+.landing-bg .landing-link-cv-on {
+  padding: 1em;
+  width: 10em !important;
+}
+.landing-bg .linkedin {
+  background-color: teal;
+  width: 15.5em;
+}
+.landing-bg .github {
+  background-color: orange;
+}
+.portfolio-bg {
+  padding-top: 8em;
+}
+.portfolio-bg .row:nth-last-child(1) {
+  padding-bottom: 3em;
+}
+.portfolio-bg .site-thumbnail {
+  height: 40vh;
+  margin: 0.6em 0;
+}
+.portfolio-bg h2 {
+  padding: 12px;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 1.5em !important;
+  background-color: rgba(209, 27, 16, 0.4);
+}
+.portfolio-bg p {
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.6s ease;
+}
+.portfolio-bg h2,
+.portfolio-bg p {
+  color: white !important;
+}
+.portfolio-bg .box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+}
+.portfolio-bg .tealjobs-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+  background-image: url('../../img/web-screens/tealjobs.jpg');
+}
+.portfolio-bg .caroline-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+  background-image: url('../../img/web-screens/mrcaroline.jpg');
+}
+.portfolio-bg .massages-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+  background-image: url('../../img/web-screens/massages.jpg');
+}
+.portfolio-bg .dev-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+  background-image: url('../../img/web-screens/dev.jpg');
+}
+.portfolio-bg .irido-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+  background-image: url('../../img/web-screens/irido.jpg');
+}
+.portfolio-bg .content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  z-index: 2;
+  height: 3em;
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover .content {
+  height: 8em;
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover h2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover .tealjobs-box {
+  opacity: 0.4;
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover .caroline-box {
+  opacity: 0.4;
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover .massages-box {
+  opacity: 0.4;
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover .dev-box {
+  opacity: 0.4;
+  transition: all 0.6s ease;
+}
+.portfolio-bg a:hover .irido-box {
+  opacity: 0.4;
+  transition: all 0.6s ease;
+}
+.portfolio-bg h2 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0 0 5px 0;
+}
+.portfolio-bg p {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  margin: 5px;
+  line-height: 1.5em;
+}
+.portfolio-bg a:hover p {
+  height: 3em;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.6s ease;
+}
+.skills-bg {
+  color: grey;
+  padding-top: 9em;
+}
+.skills-bg .row {
+  padding-bottom: 2em;
+}
+.skills-bg h2 {
+  font-family: 'La Belle Aurore', cursive;
+  font-weight: bold;
+}
+.skills-bg .legend {
+  font-family: 'La Belle Aurore', cursive;
+  padding: 0;
+  opacity: 0.4;
+  font-size: 3.8vw;
+  margin-left: 65%;
+  transition: all 1.3s;
+}
+.skills-bg .legend-cv-on {
+  font-family: 'La Belle Aurore', cursive;
+  padding: 0;
+  opacity: 0.4;
+  font-size: 3.8vw;
+  margin-left: 65%;
+  transition: all 1.3s;
+  font-size: 1.8vw;
+}
+.skills-bg hr {
+  width: 25vw;
+}
+.skills-bg ul {
+  list-style: none;
+}
+.skills-bg span {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 18px;
+}
+.contact-bg {
+  padding-top: 11em;
+  padding-bottom: 15em;
+}
+.contact-bg label,
+.contact-bg button {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 22px;
+}
+.contact-bg textarea {
+  resize: none;
+}
+.contact-bg #form_container {
+  padding: 10px;
+  background: transparent;
+}
+.footer-now {
+  height: 5em;
+  z-index: 0;
+  background-color: transparent;
+  width: 100%;
+}
+.footer-now .swap-style {
+  opacity: 1;
+  z-index: 800;
+  transition: all 1.3s;
+}
+.footer-now .swap-style button {
+  margin: 0.1em;
+  width: 7em;
+}
+.footer-now .swap-style-nav-on {
+  margin: auto;
+  bottom: 1em;
+  z-index: 800;
+}
+.footer-now .swap-style-nav-on button {
+  margin: 0.1em;
+  width: 7em;
+}
+.footer-now .swap-style-cv-on {
+  opacity: 1;
+  z-index: 800;
+  transition: all 1.3s;
+  margin-right: 80vw;
+}
+.footer-now .swap-style-cv-on button {
+  margin: 0.1em;
+  width: 7em;
+}
+.footer-now .swap-click {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.footer-now .swap-click .click-here {
+  display: none;
+}
