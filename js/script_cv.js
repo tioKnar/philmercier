@@ -12,7 +12,7 @@ $(function() {
 
               // CHECKING WINDOW'S WIDTH
 
-              if (testnow == true && windowsize > 575 && navstyle == 'flex') {
+              if (testnow == true && windowsize > 1080 && navstyle == 'flex') {
 
                 // ADDS 'CV-ON' TO SELECTED CLASS NAME
                 function addCvOn(e) {
