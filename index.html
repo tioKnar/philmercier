@@ -35,7 +35,7 @@
 			  </div>
 
 		        <!-- Form -->
-		  		<form name="contact-then" netlify-honeypot="bot-field" action="/well-done" role="form" method="post" netlify>
+		  		<form name="contact-then" netlify-honeypot="bot-field" action="/pages_then/well-done" role="form" method="post" netlify>
   				    <p style="display:none;">
 						<label>Don’t fill this out: <input name="bot-field"></label>
 					</p>
@@ -290,7 +290,10 @@
 				<div pageName="contact" class="row text-center inactive contact-bg">
 					<div class="col-md-6 offset-md-3 col-sm-12 col-xs-12" id="form_container">
 	                    <form name="contact-now" role="form" method="post" netlify-honeypot="bot-field" action="/well-done" netlify>
-c
+	                    	<p style="display:none;">
+								<label>Don’t fill this out: <input name="bot-field"></label>
+							</p>
+
 	                        <div class="form-group">
 	                            <label><i class="fa fa-user" aria-hidden="true"></i> Nom</label>
 	                            <input type="text" name="name" class="form-control" placeholder="Votre nom">
@@ -307,16 +310,6 @@ c
 	                            <button type="submit" class="btn btn-raised btn-block btn-danger">Envoyer &rarr;</button>
 	                        </div>
 	                    </form>
-	                    <div id="error_message" style="width:100%; height:100%; display:none; ">
-	                        <h4>
-	                            Erreur...
-	                        </h4>
-	                        Une erreur est survenue lors de l'envoi. 
-	                    </div>
-	                    <div id="success_message" style="width:100%; height:100%; display:none; ">
-	                        <h2>Merci pour votre message ! <br>
-	                        J'y réponds rapidement.</h2>
-	                    </div>
 	                </div>
                 </div>
 			</div>	

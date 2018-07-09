@@ -391,6 +391,12 @@ nav .navbar-toggler-icon {
   padding-top: 11em;
   padding-bottom: 15em;
 }
+.contact-bg a {
+  color: white !important;
+}
+.contact-bg .now-success {
+  font-size: 1.2em;
+}
 .contact-bg label,
 .contact-bg button {
   font-family: 'La Belle Aurore', cursive;
