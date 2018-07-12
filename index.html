@@ -80,7 +80,7 @@
 							<li pageName="contact" data-toggle="modal" data-target="#mailModal"><a href="#">Contact</a></li>
 						</ul>
 						<!-- CV -->
-						<a id="resume-gif" href="../files/cv_philippe_mercier.pdf">
+						<a id="resume-gif" href="../files/cv_philippe_mercier.pdf" target="_blank">
 							<img src="img/then/gifs/resume-gif.gif" alt="cv">
 						</a>
 						<!-- SWAP STYLE < 800 PX -->
@@ -350,8 +350,8 @@
 					<img class="down-gif" src="img/then/gifs/down-gif.gif" alt="down">
 				</div>
 			    <div class="text-center swap-style">
-			      <button class="then_button">Avant</button>
-			      <button class="now_button">Après</button>
+			      <button id="then_button" disabled>Avant</button>
+			      <button id="now_button">Après</button>
 			    </div>
 			</div>
 		</div>
@@ -368,7 +368,6 @@
 
 	
     <script src="js/script.js"></script>
-    <script src="js/form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.0.489/build/pdf.min.js"></script>
     <script src="js/script_cv.js"></script>
 
