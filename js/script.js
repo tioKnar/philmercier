@@ -89,21 +89,21 @@ $(function() {
 
     // WHAT HAPPENS WHEN THEN OR NOW IS CLICKED
     function changeSiteStyle() {
-      $('#then_button').click(function() {
+      $('.then_button').click(function() {
           $('#pagestyle').attr('href', 'css/css/style_then.css').attr('class', 'test-then');
           $('form').show();
           $('.swap-style').children().removeClass();
-          $(this).prop('disabled', true);
-          $('#now_button').prop('disabled', false);
+          // $(this).prop('disabled', true);
+          // $('.now_button').prop('disabled', false);
 
           buttonStyle();
       })
-      $('#now_button').click(function() {
+      $('.now_button').click(function() {
           $('#pagestyle').attr('href', 'css/css/style_now.css').removeClass().attr('class', 'test-now');
           $('.footer-now').css('display', 'flex');
           $('.swap-click-800').css('display', 'none');  
-          $(this).prop('disabled', true);
-          $('#then_button').prop('disabled', false);
+          // $(this).prop('disabled', true);
+          // $('.then_button').prop('disabled', false);
 
          buttonStyle();
          checkWidth();
@@ -159,7 +159,7 @@ $(function() {
 
 
        // LOADS SAME NOW PAGE AS CURRENT THEN PAGE
-       $('#now_button').click(function() {
+       $('.now_button').click(function() {
         var thenPage = $('.clicked').attr('pageName');
         // console.log('NOW : last menu clicked is ' + thenPage)
         var nowPage = $('.active').attr('pageName');
@@ -175,7 +175,7 @@ $(function() {
 
 
     // LOADS SAME THEN PAGE AS CURRENT NOW PAGE
-  $('#then_button').click(function() {
+  $('.then_button').click(function() {
   var menuData = $('.active').attr('pageName');
     $(function ajaxLoad() {
       $.ajax({url: 'pages_then/' + menuData + "_then.html",
